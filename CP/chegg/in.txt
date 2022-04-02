@@ -1,0 +1,45 @@
+1
+2
+
+
+
+
+
+
+
+
+81
+1
+
+
+HELP
+AID
+MARY
+ANNA
+MUG
+CUP
+SUM
+PRODUCT
+
+
+
+
+
+
+Is it rated?
+Is it rated?
+Is it rated?
+
+
+
+8 20 m
+20 5 f
+20 8 f
+20 8 m
+
+
+
+6 5 m
+6 5 f
+1 5 f
+20 8 m

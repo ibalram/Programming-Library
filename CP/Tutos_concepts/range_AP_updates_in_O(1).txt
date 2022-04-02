@@ -1,0 +1,48 @@
+/////////////////////////////////////////
+Problem: https://www.codechef.com/BYTR20B/problems/AGCY
+mySub: https://www.codechef.com/viewsolution/40938620
+
+More Problems:
+https://www.hackerearth.com/problem/algorithm/leaking-tankers-353fc1ec/description/
+
+///////////////////////////
+
+Range AP updates can be applied offline in  ***`O(1)`*** time per update.
+It is a technique similar to **`arr[L]+k, arr[R+1]-k`** trick for range updates.
+(to add k on the range [L..R], we do and  and take prefix sum at the end).
+
+For adding an AP on the range [L..R] we must maintain two arrays A and B.
+```
+A[L] += a
+A[R+1] -= a+ d*(R+L-1)
+B[L] += d
+B[R+1] -= d
+```
+( `a` is the first term of the AP and `d` is the common difference)
+Now After processing all updates, we take prefix sum of ``B`` that is ``B[i] += B[i-1]`` for all.
+Now for point queries first of all, we make an array ``C`` such that ``C[i] = A[i] + B[i-1]``.
+Then we take prefix sum of C . Now ``C[i]``stores the correct value for the i-th index.
+
+
+//////////////////////////////////////////////
+
+
+
+Range AP updates can be applied offline in O(1) time per update.
+It is a technique similar to arr[L]+k, arr[R+1]-k trick for range updates.
+(to add k on the range [L…R], we do and and take prefix sum at the end).
+For adding an AP on the range [L…R] we must maintain two arrays A and B.
+
+A[L] += a
+A[R+1] -= a+ d*(R+L-1)
+B[L] += d
+B[R+1] -= d
+
+( a is the first term of the AP and d is the common difference)
+Now After processing all updates, we take prefix sum of B that is B[i] += B[i-1] for all.
+Now for point queries first of all, we make an array C such that C[i] = A[i] + B[i-1].
+Then we take prefix sum of C . Now C[i]stores the correct value for the i-th index.
+
+
+
+/////////////////////////////////////////////////////////

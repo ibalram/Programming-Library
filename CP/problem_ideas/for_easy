@@ -1,0 +1,13 @@
+1. Partition a string using minimum number of cuts such that
+each part have all its substring as palindrome.
+ex. avnsmsssmsnn -> a|v|n|s|m|sss|m|s|nn
+sol: each part will have similar character.
+
+
+
+2. number of pairs(i,j) such that ai+aj==ai*aj and i<j
+sol: (2,2), (0,0)
+
+
+
+3.
